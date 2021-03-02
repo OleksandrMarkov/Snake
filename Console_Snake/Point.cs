@@ -42,6 +42,12 @@ namespace Console_Snake
 			}
 		}
 		
+		public void clear()
+		{
+			this.sym = ' ';
+			display();
+		}
+		
 		public void display()
 		{
 			Console.SetCursorPosition(x,y);

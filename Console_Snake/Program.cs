@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Console_Snake
 {
@@ -26,6 +28,28 @@ namespace Console_Snake
 			Point p = new Point(2, 3, '#');
 			Snake snake = new Snake(p, 4, Snake_direction.RIGHT);
 			snake.display();
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			/*Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);
+			snake.move();
+			Thread.Sleep(300);*/
 			
 			Console.ReadKey(true);
 		}
