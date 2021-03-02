@@ -15,6 +15,33 @@ namespace Console_Snake
 			this.sym = sym;
 		}
 		
+		public Point (Point p)
+		{
+			this.x = p.x;
+			this.y = p.y;
+			this.sym = p.sym;
+		}
+		
+		public void move(int offset, Snake_direction s_dir)
+		{
+			if (s_dir == Snake_direction.RIGHT)
+			{
+				this.x += offset;
+			}
+			else if (s_dir == Snake_direction.LEFT)
+			{
+				this.x -= offset;
+			}
+			else if (s_dir == Snake_direction.DOWN)
+			{
+				this.y += offset;
+			}
+			else if (s_dir == Snake_direction.UP)
+			{
+				this.y -= offset;
+			}
+		}
+		
 		public void display()
 		{
 			Console.SetCursorPosition(x,y);

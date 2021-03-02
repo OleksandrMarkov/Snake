@@ -12,6 +12,7 @@ namespace Console_Snake
 			
 			char border_sign = '*';
 			
+			// Field borders
 			Horizontal_line upper_border = new Horizontal_line(0, 78, 0, border_sign);
 			Horizontal_line bottom_border = new Horizontal_line(0, 78, 24, border_sign);
 			Vertical_line left_border = new Vertical_line(0, 0, 24, border_sign);
@@ -21,6 +22,10 @@ namespace Console_Snake
 			bottom_border.display();
 			left_border.display();
 			right_border.display();
+			
+			Point p = new Point(2, 3, '#');
+			Snake snake = new Snake(p, 4, Snake_direction.RIGHT);
+			snake.display();
 			
 			Console.ReadKey(true);
 		}

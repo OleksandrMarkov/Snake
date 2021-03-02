@@ -54,6 +54,8 @@
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snake.cs" />
+    <Compile Include="Snake_direction.cs" />
     <Compile Include="Vertical_line.cs" />
   </ItemGroup>
   <ItemGroup>
