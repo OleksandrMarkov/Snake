@@ -28,30 +28,24 @@ namespace Console_Snake
 			Point p = new Point(2, 3, '#');
 			Snake snake = new Snake(p, 4, Snake_direction.RIGHT);
 			snake.display();
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			/*Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);
-			snake.move();
-			Thread.Sleep(300);*/
 			
-			Console.ReadKey(true);
+			while(true)
+			{
+				if(Console.KeyAvailable)
+				{
+					ConsoleKeyInfo key = Console.ReadKey();
+					snake.process_key(key.Key);
+				}
+				Thread.Sleep(100);
+				snake.move();
+			}
+			
+			
+			
+			
+			
+			
+			
 		}
 	}
 }

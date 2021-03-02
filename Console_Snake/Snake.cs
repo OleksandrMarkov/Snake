@@ -7,7 +7,7 @@ namespace Console_Snake
 {
 	public class Snake: Figure
 	{
-		Snake_direction dir;
+		public Snake_direction dir;
 		
 		public Snake(Point tail, int length, Snake_direction dir)
 		{
@@ -41,6 +41,26 @@ namespace Console_Snake
 			Point next = new Point(head);
 			next.move(1, dir);
 			return next;
+		}
+		
+		public void process_key(ConsoleKey key)
+		{
+			if (key == ConsoleKey.LeftArrow)
+			{
+				dir = Snake_direction.LEFT;
+ 			}
+			else if (key == ConsoleKey.RightArrow)
+			{
+				dir = Snake_direction.RIGHT;
+ 			}
+			else if (key == ConsoleKey.UpArrow)
+			{
+				dir = Snake_direction.UP;
+ 			}
+			else if (key == ConsoleKey.DownArrow)
+			{
+				dir = Snake_direction.DOWN;
+ 			}
 		}
 	}
 }
