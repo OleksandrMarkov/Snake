@@ -30,7 +30,6 @@ namespace Console_Snake
 					break;
 				}
 				
-				
 				if (snake.eat(food))
 				{
 					food = food_creator.create_food();
@@ -47,10 +46,8 @@ namespace Console_Snake
 				{
 					ConsoleKeyInfo key = Console.ReadKey();
 					snake.process_key(key.Key);
-				}
-				
+				}			
 			}
-			
 		}
 	}
 }

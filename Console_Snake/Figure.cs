@@ -38,9 +38,5 @@ namespace Console_Snake
 			}
 			return false;
 		}
-		
-		public Figure()
-		{
-		}
 	}
 }

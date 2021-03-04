@@ -4,8 +4,7 @@ namespace Console_Snake
 {
 	public class Point
 	{
-		int x;
-		int y; 
+		public int x, y; 
 		public char sym;
 		
 		public Point(int x, int y, char sym)
