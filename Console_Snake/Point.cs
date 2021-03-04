@@ -6,7 +6,7 @@ namespace Console_Snake
 	{
 		int x;
 		int y; 
-		char sym;
+		public char sym;
 		
 		public Point(int x, int y, char sym)
 		{
@@ -20,6 +20,11 @@ namespace Console_Snake
 			this.x = p.x;
 			this.y = p.y;
 			this.sym = p.sym;
+		}
+		
+		public bool is_hit(Point p)
+		{
+			return p.x == this.x && p.y == this.y;
 		}
 		
 		public void move(int offset, Snake_direction s_dir)

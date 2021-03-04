@@ -62,5 +62,18 @@ namespace Console_Snake
 				dir = Snake_direction.DOWN;
  			}
 		}
+		
+		internal bool eat(Point food)
+		{
+			Point head = get_next_point();
+			if(head.is_hit(food))
+			{
+				food.sym = head.sym;
+				point_list.Add(food);
+				return true;
+			}
+			else
+				return false;
+		}
 	}
 }

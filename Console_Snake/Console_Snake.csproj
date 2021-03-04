@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Figure.cs" />
+    <Compile Include="Food_creator.cs" />
     <Compile Include="Horizontal_line.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
