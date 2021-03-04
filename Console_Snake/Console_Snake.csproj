@@ -49,6 +49,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Borders.cs" />
     <Compile Include="Figure.cs" />
     <Compile Include="Food_creator.cs" />
     <Compile Include="Horizontal_line.cs" />

@@ -43,6 +43,20 @@ namespace Console_Snake
 			return next;
 		}
 		
+		internal bool is_hit_tail()
+		{
+			var head = point_list.Last();
+			for (int i = 0; i < point_list.Count - 2; i ++)
+			{
+				if (head.is_hit(point_list[i]))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+			 
+		
 		public void process_key(ConsoleKey key)
 		{
 			if (key == ConsoleKey.LeftArrow)
